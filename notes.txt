@@ -1,0 +1,17 @@
+
+
+
+# Set up virtual machine to emulate pi-nanofire
+
+
+# set up minimum script on local system
+
+
+# set up git repo
+
+
+git init
+git add .
+git commit "min viable test v1"
+
+# Set up remote to push repo to
