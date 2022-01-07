@@ -3,15 +3,46 @@
 
 # Set up virtual machine to emulate pi-nanofire
 
+# install python3.8 if required
+
+# install git
+
 
 # set up minimum script on local system
 
-
+##############################################################################
 # set up git repo
-
 
 git init
 git add .
 git commit "min viable test v1"
 
-# Set up remote to push repo to
+# Set up remote to push repo to ono github
+
+# add origin to local repo 
+git remote add origin https://github.com/wes3985/picluster-ray-test.git
+
+# verify the remote 
+git remote -v
+
+# Commit any new changes
+
+# Push to the remote and set at the same time
+git push --set-upstream origin master
+
+##############################################################################
+
+# clone git repo onto VM
+git clone https://github.com/wes3985/picluster-ray-test
+
+cd picluster-ray-test
+
+# install pip (if required)
+sudo apt install python3-pip
+
+# install requirements.txt
+pip install -r requirements.txt
+
+
+
+

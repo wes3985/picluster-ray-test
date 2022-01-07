@@ -32,10 +32,10 @@ w=130
 
 try:
         
-    try:
-        OSM = int(ray.utils.get_system_memory() * 0.3 )
-    except Exception:
-        OSM = 5000000000
+    #try:
+    OSM = int(ray.utils.get_system_memory() * 0.3 )
+    #except Exception:
+    #OSM = 5000000000
 
     if not ray.is_initialized():
         cluster = Cluster(
