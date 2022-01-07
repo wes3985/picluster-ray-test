@@ -2,5 +2,5 @@ pandas
 numpy
 tensorflow
 sklearn
-ray
+ray==1.1
 statsmodels
